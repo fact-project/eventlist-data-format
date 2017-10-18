@@ -81,8 +81,15 @@ A simulated event is uniquely identified by the three columns
 * `event_num`: The CORSIKA event id
 * `n_reuse`: The CORSIKA event id
 
-**FACT-Tools does not store `run_id` and `n_reuse` at the moment, so
-the information is lost and a direct mapping of events in different tables is thus not possible, see https://github.com/fact-project/fact-tools/issues/248**
+
+This is not yet implemented, event_num is simply the event number in  the file, run_id does not exist.
+
+The keys are currently called:
+* mc_evt_evt_number
+* mc_evt_event_reuse
+
+And the run id is not stored at all.
+See: https://github.com/fact-project/fact-tools/pull/237
 
 ### `corsika_events`
 
